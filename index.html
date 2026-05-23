@@ -48,9 +48,17 @@
         overflow: hidden;
         position: absolute;
         top: 0;
+        left: 0;
         z-index: 14;
         opacity: 1;
         transition: opacity 1.5s;
+        transform-origin: 0 0;
+      }
+      #root {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform-origin: 0 0;
       }
 
       .title-enter__initial-background {
@@ -182,10 +190,11 @@
       (() => {
         const deviceInfo = window.__WEBGAL_DEVICE_INFO__ ?? { isIOS: false };
         const isIOS = deviceInfo.isIOS;
-        const layoutConfig = isIOS
+        const isMobile = isIOS || /Android|Mobile|webOS|BlackBerry/i.test(navigator.userAgent);
+        const layoutConfig = isMobile
           ? {
-              bottomInset: 15,
-              resizeDelay: 500,
+              bottomInset: isIOS ? 15 : 0,
+              resizeDelay: isIOS ? 500 : 200,
               viewport:
                 'width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover',
               hideEffectBackground: true,
@@ -292,7 +301,7 @@
           }
           resize();
         };
-        if (isIOS) {
+        if (isMobile) {
           const styleTag = document.createElement('style');
           styleTag.textContent = `* { font-synthesis: none !important; }`;
           if (layoutConfig.hideEffectBackground) {
