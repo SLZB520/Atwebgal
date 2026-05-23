@@ -52,7 +52,6 @@
         z-index: 14;
         opacity: 1;
         transition: opacity 1.5s;
-        transform-origin: 0 0;
       }
 
       .title-enter__initial-background {
@@ -139,6 +138,21 @@
 
     </style>
     <script>localStorage.setItem('lang','0')</script>
+    <!-- 微信/移动端音频预解锁 -->
+    <script>
+      (function unlockAudio(){
+        if (window.WeixinJSBridge) {
+          WeixinJSBridge.invoke('getNetworkType', {}, function(){
+            const ac = new (window.AudioContext||window.webkitAudioContext)();
+            if (ac.state==='suspended') ac.resume();
+            const a = new Audio(); a.volume=0.001;
+            a.play().then(function(){a.pause()}).catch(function(){});
+          });
+        } else {
+          document.addEventListener('WeixinJSBridgeReady', unlockAudio, false);
+        }
+      })();
+    </script>
     <script type="module" crossorigin src="./assets/index-MdzLVmuf.js"></script>
     <link rel="stylesheet" crossorigin href="./assets/index-CkOq6uhz.css">
   </head>
@@ -194,7 +208,6 @@
               viewport:
                 'width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover',
               hideEffectBackground: true,
-              noRotate: true,
             }
           : {
               bottomInset: 0,
@@ -264,8 +277,8 @@
                 `rotate(90deg) ` + ` translate(${mw2os}px, ${mh2os}px) ` + `scale(${zoomW2 * 1.75}, ${zoomW2 * 1.75}) `;
               transform = `rotate(90deg) ` + `translate(${mw2os}px, ${mh2os}px) ` + `scale(${zoomW2},${zoomW2}) `;
             }
-            // 移动端不强制旋转，避免夸克/百度等浏览器布局偏移
-            if (layoutConfig.noRotate) {
+            // iOS 不强制旋转
+            if (isIOS) {
               const zoomWi = w / targetWidth;
               if (effectBackground) {
                 effectBackground.style.height = `100vh`;
@@ -375,13 +388,22 @@
         });
         /** 点击屏幕，进入引擎主界面 */
         const enter = () => {
-          // 解锁浏览器音频自动播放限制
-          const audioCtx = window.AudioContext || window.webkitAudioContext;
-          if (audioCtx) {
-            const ac = new audioCtx();
-            if (ac.state === 'suspended') ac.resume();
-            ac.createBuffer(1, 1, 22050);
+          // 解锁浏览器音频自动播放限制（含微信/夸克）
+          window.__audioUnlocked = true;
+          const AudioCtx = window.AudioContext || window.webkitAudioContext;
+          if (AudioCtx) {
+            try {
+              const ac = new AudioCtx();
+              if (ac.state === 'suspended') { ac.resume(); ac.resume(); }
+              ac.createBuffer(1, 1, 22050);
+            } catch(e) {}
           }
+          // 额外用 HTML5 Audio 尝试解锁（微信需要）
+          try {
+            const tmp = new Audio();
+            tmp.volume = 0.001;
+            tmp.play().then(() => { tmp.pause(); tmp.remove(); }).catch(() => {});
+          } catch(e) {}
           const titleEnter = document.querySelector('.html-body__title-enter');
           if (enterConfig.skipAnimation) {
             if (titleEnter) {
