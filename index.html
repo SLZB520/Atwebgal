@@ -343,8 +343,8 @@
     <!-- 首屏加载 -->
     <script>
       (() => {
-        const isMobile = window.__WEBGAL_DEVICE_INFO__?.isIOS ?? false
-          || /Android|Mobile|MicroMessenger/i.test(navigator.userAgent);
+        const isIOS = window.__WEBGAL_DEVICE_INFO__?.isIOS ?? false;
+        const isMobile = isIOS || /Android|Mobile|MicroMessenger/i.test(navigator.userAgent);
         const enterConfig = isMobile
           ? { skipAnimation: true, hideDelay: 0 }
           : { skipAnimation: false, hideDelay: 2000 };
@@ -412,6 +412,7 @@
             titleEnter.style.pointerEvents = 'none';
             titleEnter.style.background = 'linear-gradient( #a1c4fd 0%, #c2e9fb 100%)';
           }
+          // 桌面端保留完整开屏动画，移动端已在上方 skipAnimation 中提前返回
           setTimeout(() => {
             if (titleEnter) {
               titleEnter.style.display = 'none';
