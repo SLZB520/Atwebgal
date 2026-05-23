@@ -1,6 +1,12 @@
 const CACHE_NAME = 'webgal-critical-assets-v3';
-const GAME_PREFIX = '/game/';
-const CRITICAL_PATHS = ['/game/background/', '/game/figure/', '/game/bgm/', '/game/vocal/', '/game/video/'];
+const GAME_PREFIX = new URL('./game/', self.location.href).pathname;
+const CRITICAL_PATHS = [
+  GAME_PREFIX + 'background/',
+  GAME_PREFIX + 'figure/',
+  GAME_PREFIX + 'bgm/',
+  GAME_PREFIX + 'vocal/',
+  GAME_PREFIX + 'video/',
+];
 const LOG_PREFIX = '[WebGAL SW]';
 const loggedKeys = new Set();
 
