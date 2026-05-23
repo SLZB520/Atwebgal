@@ -1,0 +1,6 @@
+Game_name:奥特GALGAME;
+Game_key:11f61d4da98a4f3;
+Title_img:标题背景111.png;
+Title_bgm:标题音乐.mp3;
+Textbox_theme:imss;
+Default_Language:‘zh_CN’;

@@ -1,0 +1,58 @@
+changeBg:ChatGPT Image 2026年5月4日 23_17_09.png -next;
+intro:遇到三位昏迷的前辈，你打算先救谁？|（由于此次选择关乎剧情走向，每一次故事只能体验一个奥的剧情，这里建议存档哦，想体验下一个人的剧情可以直接从这里开始，希望您玩得开心） -fontSize=medium -backgroundColor=rgba(0, 0, 0, 1) -fontColor=rgba(255, 255, 255, 1) -animation=fadeIn -delayTime=5000;
+choose:泽塔前辈:进入泽塔幻境|赛罗队长:进入赛罗幻境|希卡利长官:进入希卡利幻境|再等等:发现白色虚影;
+label:进入泽塔幻境;
+changeFigure:none -id=sl -next;
+changeFigure:none -id=xkl -next;
+changeFigure:none -id=zt -next;
+我:先救泽塔前辈吧！这边看起来好像危急一点。;
+playEffect:进入幻境.mp3 -id=进入幻境;
+:你把手搭在泽塔的计时器上，让自己胸口的光芒慢慢覆盖了他，在一阵柔和的白光过后，你进入了泽塔的幻境。;
+changeFigure: -id=xkl2 -next;
+changeFigure: -id=sl2 -next;
+changeFigure: -id=zt2 -next;
+playEffect:none -id=进入幻境;
+changeScene:zt1.txt;
+
+label:进入赛罗幻境;
+changeFigure:none -id=sl -next;
+changeFigure:none -id=xkl -next;
+changeFigure:none -id=zt -next;
+我:先去帮赛罗前辈吧，赛罗前辈的战力高安全有保障。;
+playEffect:进入幻境.mp3 -id=进入幻境;
+:你把手搭在赛罗的计时器上，让自己胸口的光芒慢慢覆盖了他，在一阵柔和的白光过后，你进入了赛罗的幻境。;
+changeFigure: -id=xkl2 -next;
+changeFigure: -id=sl2 -next;
+changeFigure: -id=zt3 -next;
+playEffect:none -id=进入幻境;
+changeScene:sl1.txt;
+
+label:进入希卡利幻境;
+changeFigure:none -id=sl -next;
+changeFigure:none -id=xkl -next;
+changeFigure:none -id=zt -next;
+我:先去帮希卡利长官吧，他一定知道这一切都是怎么回事。;
+playEffect:进入幻境.mp3 -id=进入幻境;
+:你把手搭在希卡利的计时器上，让自己胸口的光芒慢慢覆盖了他，在一阵柔和的白光过后，你进入了希卡利的幻境。;
+changeFigure:none -id=xkl2;
+changeFigure:none -id=sl2;
+changeFigure:none -id=zt3;
+playEffect:none -id=进入幻境;
+changeScene:xkl1.txt;
+
+label:发现白色虚影;
+changeFigure:none -id=sl -next;
+changeFigure:none -id=xkl -next;
+changeFigure:none -id=zt -next;
+changeFigure: -right -id=xkl2 -next;
+changeFigure: -left -id=sl2 -next;
+changeFigure: -id=zt2 -next;
+:你发现在不远处有一个白色的虚影，看不太清长什么样，看身形似乎是一名高大的银族奥特曼战士，你很好奇。;
+changeFigure:白色虚影.png -id=by -transform={"position":{"y":93},"alpha":0.5} -next;
+我:这是，居然还有一个幻境嘛？颜色好暗淡啊，感觉像是很久之前有奥留下来的了，不管了，先进去看看再说。;
+playEffect:进入幻境.mp3 -id=进入幻境;
+:你用手触摸那个银白色的虚影，一阵天旋地转之后你进入了那个虚影的幻境。;
+changeFigure:none -id=by;
+playEffect:none -id=进入幻境;
+
+changeScene:bly1.txt;

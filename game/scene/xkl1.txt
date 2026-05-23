@@ -1,0 +1,89 @@
+bgm:阿柏前期.mp3;
+changeBg:阿柏前期.png -transform={"blur":1,"colorRed":240,"colorGreen":240,"colorBlue":240} -next;
+intro:你将手搭在希卡利的计时器上，胸口的光芒慢慢覆盖了他。一阵柔和的白光过后，你发现自己站在一片广袤的水晶大地上。|天空由无数极光般的光带交织而成，脚下每一寸土地都覆盖着温润的、乳白色的结晶。 -fontSize=medium -backgroundColor=rgba(0, 0, 0, 1) -fontColor=rgba(255, 255, 255, 1) -animation=fadeIn -delayTime=5000 -userForward;
+intro:空气中飘散着星星点点的光粒子，自由、舒的，像夏夜的萤火虫，在微风中漫无目的地游荡。大地上的水晶一簇一簇地生长着，有的只到你膝盖那么高，有的则像大树一样挺拔，每一根晶簇都通体透彻，内部流动着浅绿到淡金渐变的柔光，风穿过晶簇的棱面时会发出极轻极轻的共鸣声 -fontSize=medium -backgroundColor=rgba(0, 0, 0, 1) -fontColor=rgba(255, 255, 255, 1) -animation=fadeIn -delayTime=5000 -userForward;
+intro:你顺着地势往前走，地势微微起伏，前方是一片开阔的高地。而在那片高地的正中央——他站在那里。 -fontSize=medium -backgroundColor=rgba(0, 0, 0, 1) -fontColor=rgba(255, 255, 255, 1) -animation=fadeIn -delayTime=5000 -userForward;
+changeFigure:希卡利.png -right -id=xkl -transform={"position":{"x":-162,"y":220},"scale":{"x":1.2,"y":1.2}} -next;
+:希卡利半跪在地上，指尖沿着水晶的纹理慢慢拂过。;
+我:希卡利长官……这里是？;
+
+miniAvatar:希卡利(1).png;
+希卡利:阿柏星。更准确地说——是我记忆中的阿柏星，这里是我的幻境。;
+miniAvatar:none;
+我:！;
+
+希卡利:这颗流浪行星具有幻境共鸣特性，在穿越黑洞时吸收了同类能量，形成了自发性的幻境生成机制。;
+希卡利:它不是读取记忆，而是读取我们内心强烈的情绪印痕，将那段回忆复现出来。实验样本被它同频吸引，激活了防御本能。;
+miniAvatar:none;
+我:那我们该怎么出去？;
+:希卡利看了看手上的能量仪，沉默了一会。;
+miniAvatar:希卡利(1).png;
+希卡利:幻境核心大概率就是实验样本能量——它和星球原有的幻境核心融合了。;
+希卡利:找到并破坏核心，就能离开。你体内残留的样本能量和核心同出一源，可以共鸣。试试追踪它的位置。;
+miniAvatar:none;
+我:好的长官，我试试。;
+playEffect:光束指向.mp3 -id=光束指向;
+:你闭上眼睛，集中意念。胸口那团温暖的能量开始有规律地波动，投出一道极细的光束，指向前方。;
+
+playEffect:none -id=光束指向;
+我:在那个方向！;
+miniAvatar:希卡利(1).png;
+希卡利:走吧，去看看。;
+miniAvatar:none;
+changeBg: -next;
+bgm:黑暗光之国.mp3;
+changeBg:受灾阿柏.png -ease=backInOut -unlockname=受灾 -exitDuration=10 -enter=dotFilm;
+changeBg: -next;
+
+changeBg:受灾阿柏.png -next;
+playEffect:爆炸白光.mp3 -id=能量波动;
+:没走多远，一股狂暴的能量波动从前方袭来。空气尖啸，水晶碎片被卷起。;
+playEffect:none -id=能量波动;
+:一朵漆黑的能量从漩涡中心绽开——纯粹的、吞噬一切的黑色。所过之处，水晶褪色、碎裂、化为齑粉。 -notend;
+changeFigure:jimeng-2026-05-06-8032-让这个怪兽张开双臂，做出大叫的动作，整体画面协调自然_magic.png -left -id=bjr -transform={"position":{"x":-29,"y":237},"scale":{"x":1.7,"y":1.7}} -next;
+miniAvatar:希卡利(1).png;
+希卡利:博伽茹！！;
+希卡利:（扭头对我说）退后！这不是你能应付的东西！;
+miniAvatar:none;
+playEffect:希卡利光剑出窍.mp3 -id=光剑出鞘;
+:希卡利一把将你拦到身后。他右手向前一伸，一道光在掌心炸开——骑士光剑，剑身修长，折射出冷冽的银蓝寒芒。;
+playEffect:none -id=光剑出鞘;
+:银蓝色的勇者之铠从他体内浮现，瞬间覆盖全身。 -notend;
+changeFigure: -id=xkl -next;
+changeFigure:猎手骑士剑.png -right -id=xkl -transform={"position":{"x":-153,"y":503},"scale":{"x":1.8,"y":1.8},"bloomBrightness":0.98} -next;
+miniAvatar:希卡利(1).png;
+希卡利:即使这是幻境——我也绝不允许任何人再践踏这颗星球。;
+希卡利:博——伽——茹！;
+miniAvatar:none;
+:博伽茹从黑雾中完全显露——暗紫色甲壳，布满利齿的巨口，比任何超兽都庞大。;
+playEffect:博伽茹.mp3 -id=博伽茹嘶鸣;
+
+:一声嘶鸣震得水晶大地都在颤动。;
+playEffect:none -id=博伽茹嘶鸣;
+:希卡利保持距离，左手连射光弹打在它脚下，炸起的水晶碎片迷住了它的感知。;
+playEffect:剑击.mp3 -id=剑击;
+:他趁势侧移，骑士剑挥出一道弧光，精准劈在博伽茹侧腹的甲壳缝隙上。;
+playEffect:none -id=剑击;
+我:击中了！太好了;
+miniAvatar:希卡利(1).png;
+:扬起的粉尘散去，博伽茹依旧完好无损。;
+希卡利:不够。它的防御被幻境能量大幅增幅了，是这个幻境的新机制吗？;
+miniAvatar:none;
+:那道剑光只留下了一道浅浅的白痕。博伽茹的防御力被幻境能量极大地增幅了——甲壳上的黑色纹路在承受攻击的瞬间闪过一道暗光，将大部分冲击都吸收了进去。;
+:而博伽茹的反击来得更快，一条粗壮的尾巴破空甩来，希卡利抬剑格挡，整个人却被震得倒飞出去，双脚在地面上犁出两道深沟。;
+changeFigure: -id=xkl -next;
+changeFigure:猎手骑士剑受伤.png -right -id=xkl -transform={"position":{"x":-109,"y":184},"scale":{"x":1.1,"y":1.202}} -next;
+我:希卡利长官！！！;
+:博伽茹攻势不减，此时已经来到了希卡利的身前，它张大嘴巴，紫黑色的能量在嘴里聚集，一发紫色吐息正准备向希卡利射去。;
+:你从侧翼冲上，胸口的锚点能量凝聚在掌心，一道光束轰在博伽茹的背部。光束击中了甲壳缝隙，博伽茹吃痛地嘶鸣了一声，但没有造成实质伤害。;
+:受击后的博伽茹脑袋只是轻轻一撇，被我吸引了注意力，停下了脚步。;
+playEffect:博伽茹.mp3 -id=吐息;
+:博伽茹转头，巨口喷出暗紫色吐息，直冲我而来。;
+playEffect:none -id=吐息;
+希卡利:不好，小心！;
+playEffect:玻璃.mp3 -id=光盾破碎;
+:希卡利瞬身挡在你面前，光盾展开——但冲击力太大，两人被轰飞数十米。;
+
+playEffect:none -id=光盾破碎;
+
+changeScene:xkl2.txt; 利幻境2.txt

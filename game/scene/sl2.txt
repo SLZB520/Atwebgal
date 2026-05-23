@@ -1,0 +1,106 @@
+playEffect:能量汇聚.mp3 -id=能量汇聚;
+我:这是？！！！！;
+
+:我胸口那缕金色的光突然挣脱了身体，拖着细碎的星屑尾迹，笔直地朝赛罗飞去。;
+playEffect:none -id=能量汇聚;
+:赛罗反手一把握住那团能量，金色的能量瞬间从指缝间炸开，沿着手臂蔓延至全身，他猛地仰起头;
+playEffect:光束指向.mp3 -id=光芒降临;
+
+: 数道光柱自他身后骤然冲天而起，感应着汹涌的能量，从星海各处汇聚而来。
+playEffect:none -id=光芒降临;
+: 光晕翻涌间，数道身影一同凝实落地。镜子骑士、红莲火焰、詹伯特兄弟并肩而立，各自身上标志性的微光静静亮起，气息沉稳。
+: 人群正中，赛文孤身伫立，双臂抱于胸前。
+: 明黄色的眼灯安静望向赛罗，缓缓颔首。
+miniAvatar:黑暗赛罗1.png;
+黑暗赛罗:！！！！;
+miniAvatar:none;
+:赛罗身后，两束光一左一右亮起。高斯和戴拿从光中走出。;
+:两人将手按在赛罗肩上，朝他点了点头。;
+playEffect:光芒扩散.mp3;
+:金色的光与月白的蓝，同时流入赛罗体内。;
+playEffect:none;
+changeFigure:none -id=sl -next;
+changeFigure:none -id=dsl -next;
+changeBg:屏幕截图 2026-05-17 210316.png -unlockname=cg;
+changeBg:none -next;
+changeBg:光之国受损.png -next;
+changeFigure:ChatGPT Image 2026年5月18日 20_42_07_magic.png -right -id=sl -transform={"position":{"x":-268,"y":512},"scale":{"x":1.6,"y":1.6}} -next;
+changeFigure:黑暗赛罗.png -left -id=dsl -transform={"position":{"x":69,"y":441},"scale":{"x":1.5,"y":1.5}} -next;
+playEffect:爆炸白光.mp3 -id=融合;
+playEffect:爆炸最终版.mp3 -id=爆炸;
+
+
+:轰——！！！三道光芒同时炸裂。炽热的金，沉静的蓝，从赛罗胸腔中迸发的意志之光，交织在一起。;
+playEffect:none -id=爆炸;
+playEffect:none -id=融合;
+changeFigure: -id=sl -next;
+
+changeFigure:ChatGPT Image 2026年5月18日 17_38_43_magic.png -right -id=sj -transform={"position":{"x":-197,"y":415},"scale":{"x":1.6,"y":1.6}} -next;
+setAnimation:shockwaveIn -target=sj;
+: 光芒散去，三道身影彻底融为一体。;
+: 崭新的巨人伫立在天地之间，正是传说中的赛迦奥特曼。;
+: 他身形挺拔修长，周身流转着青蓝与暗紫交织的流光纹路，银白的光痕如星河般游走全身。;
+: 头部六根尖锐的银色头角凌厉舒展，狭长的金色眼瞳沉静而威严，不对称的头冠尽显神秘锋芒。;
+: 胸口没有凸起的彩色计时器，一道深邃的光之裂隙内嵌着发光核心，微光缓缓脉动。;
+: 肩甲与四肢线条流畅锐利，左腕的赛迦手镯泛着微光，利爪般的双手蓄满宇宙究极之力。;
+: 周身萦绕着淡淡的光雾，金、蓝、赤三色余辉在体表缓缓流转，神圣又极具压迫感。;
+: 与绝望之中诞生出的希望，赛迦！！！;
+miniAvatar: 黑暗赛罗1.png;
+黑暗赛罗:……那就一起去死 ——！！;
+miniAvatar:none;
+playEffect:能量汇聚.mp3 -id=能量汇聚；;
+
+: 他双目猩红，周身翻涌着毁灭般的黑暗气息，双手狠狠高举过头。;
+playEffect:none -id = 能量汇聚；
+: 狂暴的暗红色能量在掌心疯狂压缩汇聚，体积不断膨胀，威压席卷四方。;
+:空气剧烈扭曲震颤，大地寸寸崩裂，碎石与烟尘被黑暗之力强行卷起。；
+playEffect:爆炸最终版.mp3 -id=光线对撞；;
+
+: 黑暗赛罗怒吼一声，将倾尽所有怨念与黑暗的暗红色毁灭光束轰然轰出，直扑赛迦！;
+playEffect:none -id = 光线对撞；
+: 赛迦从容抬手，掌心绽放出璀璨绚烂的虹色神光，两道力量在半空轰然对撞！;
+: 狂暴的冲击波以碰撞点为中心疯狂炸开，四周建筑崩毁，漫天碎石被瞬间碾成齑粉，烟尘遮蔽天地。;
+: 狂暴的僵持仅仅持续数秒，黑暗之力便被神光层层压制。;
+: 赛迦身形骤然虚化，以不可思议的速度瞬间闪身，直接出现在黑暗赛罗身后！;
+playEffect:击打.mp3 -id=重拳；;
+
+: 凌厉的重拳接连落下，银蓝色的光之利爪撕裂黑暗屏障。;
+playEffect:none -id = 重拳；
+: 每一击都带着究极巨人的恐怖力量，黑暗赛罗的躯体上不断炸开深可见骨的裂口，浓稠的黑红色毁灭之光从裂缝中疯狂喷涌而出。;
+: 赛迦缓缓后撤拉开距离，周身流光纹路尽数亮起。;
+: 胸口内嵌的光之核心骤然迸发，一道浓缩至极致的虹色神力在拳心凝聚成型。;
+: 下一瞬，赛迦纵身突进，一记贯穿天地的重拳，径直轰穿了黑暗赛罗的胸膛！;
+changeBg:none -next;
+changeFigure: -id=sj -next;
+changeFigure:none -id=dsl -next;
+changeBg:赛迦战斗.png;
+changeBg:none -next;
+changeBg:光之国受损.png;
+playEffect:极速飞过完整版.mp3 -id=贯穿；;
+
+changeFigure:黑暗赛罗.png -left -id=dsl -transform={"position":{"x":69,"y":441},"scale":{"x":1.5,"y":1.5}} -next;
+changeFigure:ChatGPT Image 2026年5月18日 17_38_43_magic.png -right -id=sj -transform={"position":{"x":-197,"y":415},"scale":{"x":1.6,"y":1.6}} -next;
+miniAvatar: 黑暗赛罗1.png;
+黑暗赛罗:……什么……;
+miniAvatar:none;
+playEffect:none -id = 贯穿；
+: 他僵在原地，缓缓低头，难以置信地凝视着胸口那道贯穿全身的巨大空洞。;
+: 猩红的眼灯剧烈闪烁，电流般的杂音在黑暗躯体里炸开，滋啦作响。;
+: 伴随着一声刺耳的爆裂声，破碎的黑暗计时器与猩红眼灯一同骤然熄灭，彻底失去光芒。;
+playEffect:爆炸.mp3 -id=躯体碎裂；;
+
+: 黑暗赛罗的躯体从胸口的裂痕开始，一层层崩裂瓦解。漆黑的装甲寸寸剥落，黑暗能量如同溃散的黑雾，一点点消散。;
+playEffect:none -id = 躯体碎裂；
+: 最终整具身躯化作漫天细碎的黑色灰烬，被晚风一卷，彻底飘散在天地之间。;
+miniAvatar: 黑暗赛罗1.png;
+黑暗赛罗:……怎么会……这样……;
+miniAvatar:none;
+changeFigure: -id=sj -next;
+changeFigure:none -id=dsl -next;
+changeFigure:ChatGPT Image 2026年5月18日 20_42_07_magic.png -right -id=sl -transform={"position":{"x":-268,"y":512},"scale":{"x":1.6,"y":1.6}} -next;
+: 绚烂的神光缓缓褪去，赛迦的融合之力消散，赛罗的身影自光芒中显现。;
+: 他重重落回地面，单膝跪地，剧烈喘息，周身还残留着战斗后的灼热余温。;
+miniAvatar:赛罗(1).png;
+赛罗:想击败我？你还早两万年呢。;
+miniAvatar:none;
+changeScene:sl3.txt;

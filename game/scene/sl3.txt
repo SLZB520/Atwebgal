@@ -1,0 +1,87 @@
+: 你按捺不住心底的激动，快步上前，直接用力扑进他怀里，双臂紧紧环住他的腰。;
+我: 赛罗前辈！你太厉害了！！刚才那一战帅爆了！我就知道 —— 那种的家伙，绝对不可能打败你！;
+changeFigure: -id=sl -next;
+changeFigure:ChatGPT Image 2026年5月17日 15_15_58_magic.png -right=true -id=sl -next=true -transform={"position":{"x":-161,"y":434},"scale":{"x":1.5,"y":1.5}}
+: 赛罗整个人骤然一僵，浑身的紧绷感瞬间蔓延开来。;
+: 光洁的脸颊与耳根以肉眼可见的速度泛起淡淡的绯红，连耳尖都烧得滚烫。;
+miniAvatar: 赛罗(1).png;
+赛罗:喂 ——！！你、你干什么突然抱过来啊！！我还没准备好呢;
+miniAvatar:none;
+: 他的声音慌乱得微微拔高，原本傲气十足的语气全乱了章法。;
+: 一只手虚虚搭在你的后背，指尖微微蜷缩，却始终没有推开你。;
+: 高大的身躯就这么僵硬地站着，强装镇定的模样，偏偏泛红的脸颊藏不住那份猝不及防的羞涩。;
+playEffect:爆炸白光.mp3 -id=样本出现；;
+
+changeFigure:none -id=sl;
+changeFigure:赛罗.png -right -id=sl -transform={"position":{"x":-180,"y":421},"scale":{"x":1.6,"y":1.6}} -next;
+: 漫天飘散的黑色灰烬中央，一缕幽寂的淡紫色能量缓缓凝聚成球，缓缓悬浮升空。细碎的荧光光点不断从球体中逸散而出，在半空轻轻浮动，带着幻境独有的诡异波动。;
+playEffect: -id=样本出现；;
+我:啊 —— 是幻境的能量样本！;
+: 你猛地松开还僵在原地的赛罗，快步冲上前，掌心泛起柔和的白光，张开双手展开一层细密的能量屏障。;
+: 淡黄色的光粒被尽数牵引，顺着屏障流转，稳稳汇入手中的采集容器内，容器发出一声清脆利落的轻响 —— 滴。;
+playEffect:回收成功.mp3 -id=回收成功；;
+我：幻境能量样本 —— 回收完成！;
+playEffect:none -id = 回收成功；
+playEffect:玻璃渐渐破碎.mp3 -id=幻境瓦解；;
+: 随着样本被彻底回收，这片由幻境构筑的世界开始剧烈崩塌瓦解。;
+playEffect:none -id = 幻境瓦解；
+bgm:最后回家bgm.mp3 -enter=2000 -volume=80;
+intro:破碎的废墟、崩裂的大地如同被吹散的泡影，化作无数光粒飞速消散。暗红压抑的天幕层层龟裂、剥离，虚假的幻象褪去，露出外界灰白色的厚重雾气，最终显露出这片空间真实的黑红色荒芜地表。 -fontSize=medium -backgroundColor=rgba(0, 0, 0, 1) -fontColor=rgba(255, 255, 255, 1) -animation=fadeIn -delayTime=5000 -userForward;
+changeFigure: -id=sl -next;
+changeBg:none -next;
+changeBg:ChatGPT Image 2026年5月4日 23_17_09.png -next;
+intro:地表的裂痕渐渐愈合，灰白色的雾气缓缓散去，久违的天光透过云层洒落。不远处，希卡利的手指微微动了动，睫毛轻颤，而一旁的泽塔则猛地浑身一震，拳头攥紧，猛地坐了起来，脑袋还晕乎乎地晃了晃。 -fontSize=medium -backgroundColor=rgba(0, 0, 0, 1) -fontColor=rgba(255, 255, 255, 1) -animation=fadeIn -delayTime=5000 -userForward;
+changeFigure:泽塔.png -left -id=zt -transform={"position":{"x":282,"y":380},"scale":{"x":1.3,"y":1.3}} -next;
+miniAvatar:泽塔(1).png;
+泽塔:考试题不要消失——唔？！西秀？！主角？！还有希卡利前辈？！发生什么了？我怎么会在这里？刚才的战斗是梦吗？;
+miniAvatar:none;
+changeFigure:赛罗.png -id=sl -transform={"position":{"x":24,"y":380},"scale":{"x":1.4,"y":1.4}} -next;
+miniAvatar:赛罗(1).png;
+赛罗:只是点小幻境而已，没什么值得大惊小怪的。;
+miniAvatar:none;
+changeFigure:希卡利.png -right -id=xkl -transform={"position":{"x":122,"y":157},"scale":{"x":1,"y":1}} -next;
+:希卡利缓缓站起身，抬手拍了拍身上的灰尘，目光扫过恢复平静的地表，最后落在你腰间闪烁着微光的采集容器上，眼神柔和了几分。;
+miniAvatar:希卡利(1).png;
+希卡利:幻境能量样本已经顺利回收了，辛苦你了。;
+miniAvatar:none;
+:他缓步走到你面前，拿起了样本，指尖轻轻敲了敲采集容器的外壳，容器发出细微的嗡鸣，淡黄色的样本在里面缓缓流转。;
+miniAvatar:希卡利(1).png;
+希卡利:这颗流浪行星具有幻境生成能力，我们的实验样本被它同频吸引，反过来激活了它的防御本能。刚才大家经历的，是各自内心的幻境。;
+miniAvatar:none;
+miniAvatar:泽塔(1).png;
+泽塔:哦哦哦！原来如此！那西秀！你在幻境里经历了什么啊？是不是又跟厉害的敌人打架了？有没有使出新的技能？快给我看看！;
+miniAvatar:none;
+:你正要张嘴，兴冲冲地想把幻境里赛罗化身赛迦、击溃黑暗赛罗的帅气一幕讲给泽塔听。
+:余光刚扫到身侧，就撞进赛罗的视线里。
+:他故意板着脸装作不在意，耳尖却悄悄泛红，飞快朝你眨了下眼，摇了摇头。;
+:明明是傲娇又别扭的模样，眼底却带着点不好意思，在悄悄示意你——不许乱讲出去。
+:你忍着想笑的冲动，偷偷冲他比了个OK的手势，心领神会地转了话锋。;
+我:啊——说来话长啦，反正最后多亏了赛罗前辈，一下子就解决了所有麻烦，刚才那一战，简直帅到炸裂！;
+miniAvatar:泽塔(1).png;
+泽塔:哇——果然不愧是西秀！奥特厉害！我就知道西秀一定能轻松解决！;
+miniAvatar:none;
+miniAvatar:赛罗(1).png;
+赛罗:哼，废话。少贫嘴了，走了。回去加倍训练，要想达到我的水平，你还差得远呢。;
+miniAvatar:none;
+miniAvatar:泽塔(1).png;
+泽塔:诶？！训练？！西秀，我没听说今天有训练啊！而且还要加倍？！;
+miniAvatar:none;
+miniAvatar:赛罗(1).png;
+赛罗:现在听说了。怎么？不服？那就再加倍。;
+miniAvatar:none;
+playEffect:泽塔起飞.mp3 -id=起飞;
+miniAvatar:泽塔(1).png;
+泽塔:不不不！服！我服！奥特抱歉西秀！我马上就准备！;
+miniAvatar:none;
+playEffect:none -id=起飞;
+changeFigure: -id=zt -next;
+changeFigure: -id=sl -next;
+changeFigure: -id=xkl -next;
+changeBg:标题背景.png -next;
+: 赛罗周身浮起一层利落的银白光晕，没多说半句，率先提速掠向前方。猩红披风在星际长风里翻飞舒展，星云深处，光之国独有的翡翠色微光缓缓亮起，温柔漫过整片星海。
+:你飞后方，视线不自觉落在前方挺拔的背影上。他始终没有回头，刻意端着平日里桀骜的模样，维持着强大战士的姿态。;
+:可你分明看见，他抬手飞快蹭了蹭鼻尖，动作轻得几乎转瞬即逝，连耳尖都残留着一丝不易察觉的淡红。;
+: 你抿唇轻笑，心底了然。迎着远方的柔光，轻轻提速，向着光之国的方向，缓缓跟上他的脚步。
+intro:光之国翡翠色的光芒已经在星云的尽头隐隐浮现——那是宇宙中最安宁的一隅，是你和同伴们正在归去的方向，也是所有奥特战士心中最温暖的归宿。 -fontSize=medium -backgroundColor=rgba(0, 0, 0, 1) -fontColor=rgba(255, 255, 255, 1) -animation=fadeIn -delayTime=5000 -hold;
+intro:全剧终 -fontSize=medium -backgroundColor=rgba(0, 0, 0, 1) -fontColor=rgba(255, 255, 255, 1) -animation=fadeIn -delayTime=5000;
+end;

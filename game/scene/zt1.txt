@@ -1,0 +1,128 @@
+bgm:考场平时.mp3 -enter=400;
+intro:待眼前的光芒散去，入眼的是一间巨大的、看不到尽头的圆形考场。阶梯座位上坐满了模糊的、面目不清的考生，只有泽塔一个人坐在正中央，抓耳挠腮。|考卷在他面前发出刺眼的白光，上面的题目像活的一样在扭动，他一个字都看不懂。 -fontSize=medium -backgroundColor=rgba(0, 0, 0, 1) -fontColor=rgba(255, 255, 255, 1) -animation=fadeIn -delayTime=5000;
+changeBg:光之国考场.png -next;
+我:这里是？看上去有点眼熟啊，怎么感觉自己突然就胸闷气短了起来？;
+我:哎！这里不会是光之国宇宙警备队笔试考场吧！真是不好的回忆啊。;
+changeFigure:泽塔.png -id=zt -transform={"position":{"x":0,"y":406},"scale":{"x":1.494,"y":1.397}} -next;
+:你走进考场，坐在中央的泽塔已经换了七八种坐姿。他一会儿趴在桌上，一会儿仰头看天花板。;
+miniAvatar:泽塔(1).png;
+泽塔:（双手抱头）可恶……这次的题目怎么这么难啊……我记得我之前已经考过了啊，为什么又来一次？……赛罗师父说考不过就不收我当徒弟……奥特绝望啊啊啊！;
+miniAvatar:none;
+我:泽塔前辈的幻境居然是考试吗？额......出人意料但是又意外的合情合理呢（汗颜）;
+:你向泽塔走去，泽塔此时也看到了你。;
+miniAvatar:泽塔(1).png;
+泽塔:（奥特吃惊）诶？！你是希卡利前辈实验室新来的助理{name}——你怎么在这里？！等等，你也来考宇宙警备队吗？奥特有缘！;
+miniAvatar:none;
+:泽塔似乎完全没意识到这是幻境，在他的认知里，这是真实的补考。;
+我:泽塔前辈！我已經是科技局的啦，考不了警备队啊......;
+我:啊，重点不是这个。泽塔前辈，这里其实不是现实，我们之前在追踪实验室泄露的样本来到了一个未知的流浪星球，但是这个星球却有制作幻境的能力，这里就是泽塔前辈你的幻境！;
+miniAvatar:泽塔(1).png;
+泽塔:哦！原来如此吗！居然能够读取我的记忆，还能制造这么恐怖的环境，奥特可怕！;
+泽塔:（四处张望）这里似乎没有出去的地方？你知道怎么出去吗？;
+miniAvatar:none;
+:你环顾四周，整个考场都是封闭的，空间能量仪也没有波动，并没有出去的空间缝隙。;
+我:啊，周围好像没有能出去的空间裂隙呢，不过按照之前收集到的幻境数据，如果能成功通关幻境的话，幻境核心应该就会出现。泽塔前辈你的幻境是考试，如果能成功通关考试的话，没准就能离开这里了！;
+miniAvatar:泽塔(1).png;
+泽塔:噢噢噢噢！超级有道理啊！那我们现在就开始吧！;
+miniAvatar:none;
+:泽塔奥特兴奋地拿起了试卷！;
+playEffect:选择效果音文件 -id=试卷闪光;
+playEffect:none -id=试卷闪光;
+label:question_1
+intro:第一题：哪一个宇宙人拥有自由转换外形的能力？ -fontSize=large -backgroundColor=rgba(0, 0, 0, 1) -fontColor=rgba(255, 255, 200, 1) -animation=fadeIn -delayTime=5000;
+intro:A、马格马星人  B、巴巴尔星人  C、巴罗萨星人  D、芭芭拉星人 -fontSize=medium -backgroundColor=rgba(0, 0, 0, 1) -fontColor=rgba(255, 255, 255, 1) -animation=fadeIn -delayTime=5000;
+choose:马格马星人:wrong1|巴巴尔星人:correct1|巴罗萨星人:wrong2|芭芭拉星人:wrong3
+
+label:wrong1
+miniAvatar:泽塔(1).png;
+泽塔:应该是这个！就是你了马格马星人！我记得这种宇宙人名字里有两个一样的字来着！;
+miniAvatar:none;
+我:哎！这不对吧，马格马星人不是那个毁灭雷欧前辈家乡的种族吗？应该没有能力变身吧。;
+miniAvatar:泽塔(1).png;
+泽塔:啊——你说得对！;
+miniAvatar:none;
+jumpLabel:question_1
+
+label:wrong2
+miniAvatar:泽塔(1).png;
+泽塔:应该是这个！就是你了巴罗萨星人！这个名字真的很耳熟啊！;
+miniAvatar:none;
+我:哎！这个不是一次能产一万颗蛋的那个种族吗？很明显不对啊前辈！;
+miniAvatar:泽塔(1).png;
+泽塔:哎？原来是这样吗？;
+miniAvatar:none;
+jumpLabel:question_1
+
+label:wrong3
+miniAvatar:泽塔(1).png;
+泽塔:应该是这个！就是你了芭芭拉星人！我记得这种宇宙人名字里有两个一样的字来着！;
+miniAvatar:none;
+我:泽塔前辈，这个好像是个奶妈。;
+miniAvatar:泽塔(1).png;
+泽塔:哎？原来是这样吗？;
+miniAvatar:none;
+jumpLabel:question_1
+
+label:correct1
+miniAvatar:泽塔(1).png;
+泽塔:就是你了巴巴尔星人！我记得这种宇宙人名字里有两个一样的字来着！;
+miniAvatar:none;
+playEffect:correct_answer3 (1).mp3 -volume=40 -id=正确音效;
+我:（巴巴尔，你这个___）;
+playEffect:none -id=正确音效;
+:在泽塔写下正确答案之后，考卷闪了一下金光。;
+？？？:"分值 +10，恭喜，请进入下一题。";
+:考场上响起了机械的声音。;
+我:好耶！泽塔前辈！;
+miniAvatar:泽塔(1).png;
+泽塔:噢噢噢噢！奥特厉害！好！吊着一口气！下一题！;
+miniAvatar:none;
+我:哎？这句话好像不是这么用的啊喂。;
+playEffect:选择效果音文件 -id=试卷闪光;
+playEffect:none -id=试卷闪光;
+jumpLabel:question_2
+
+label:question_2
+intro:第二题：艾斯奥特曼一共有多少个技能（包括光线技能、特殊能力以及组合技能）？|A、27个  B、60个  C、74个 -fontSize=large -backgroundColor=rgba(0, 0, 0, 1) -fontColor=rgba(255, 255, 200, 1) -animation=fadeIn -delayTime=5000 -userForward;
+choose:27个:wrong4|60个:wrong5|74个:correct2
+
+label:wrong4
+miniAvatar:泽塔(1).png;
+泽塔:艾斯尼桑？;
+miniAvatar:none;
+我:正常的奥应该只会有二十多个能力吧，会不会是27个？;
+miniAvatar:泽塔(1).png;
+泽塔:嘿嘿嘿，艾斯尼桑可是很厉害的！特别是光线技能！我以后也要和艾斯尼桑一样能发射好多好多光线技能！这题我知道，27个还远远不够哦。;
+miniAvatar:none;
+jumpLabel:question_2
+
+label:wrong5
+miniAvatar:泽塔(1).png;
+泽塔:艾斯尼桑？;
+miniAvatar:none;
+我:正常的奥应该只会有二十多个能力吧，艾斯前辈的技能一向很厉害会不会是60个？;
+miniAvatar:泽塔(1).png;
+泽塔:嘿嘿嘿，艾斯尼桑可是很厉害的！特别是光线技能！我以后也要和艾斯尼桑一样能发射好多好多光线技能！这题我知道，60个还不够哦。;
+miniAvatar:none;
+jumpLabel:question_2
+
+label:correct2
+miniAvatar:泽塔(1).png;
+泽塔:艾斯尼桑？;
+miniAvatar:none;
+我:艾斯前辈的技能一向很厉害会不会是74个，74这个数字摆在这里也是很奇怪啊？;
+miniAvatar:泽塔(1).png;
+泽塔:嘿嘿嘿，艾斯尼桑目前只展示过74个技能。好的！等回去之后就定一个每天研究100个光线的小目标！;
+miniAvatar:none;
+playEffect:correct_answer3 (1).mp3 -volume=40 -id=正确音效;
+:在泽塔写下正确答案之后，考卷再次闪起了金光。;
+playEffect:none -id=正确音效;
+？？？:"分值 +10，恭喜，请进入下一题。";
+:考场上机械的声音再次响起。;
+我:太好了！泽塔前辈你又答对了！;
+miniAvatar:泽塔(1).png;
+泽塔:奥特顺利！看来今天是我的幸运日！;
+miniAvatar:none;
+changeFigure:none -id=zt -next;
+changeBg: -next;
+changeScene:zt2.txt

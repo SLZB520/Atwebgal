@@ -1,0 +1,26 @@
+playEffect:消散.mp3 -id=幻境消散;
+changeBg:贝利亚背影.png -next;
+:话音刚落，周围的景象开始慢慢地、一点一点地消散。墙壁化为光粒，地上的积木消融成虚无，三个幼崽的身影也渐渐变得透明。;
+playEffect:none -id=幻境消散;
+:最后，只剩下贝利亚一个人，站在原地。;
+:他背对着你，沉默了很久。;
+playEffect:玻璃.mp3 -id=空间碎裂;
+:突然他抬起头，蓄力，一拳轰出。;
+playEffect:none -id=空间碎裂;
+changeBg:none -next;
+changeBg:逃跑路线.png -next;
+:那一拳狠狠地砸在虚空之中，白色的空间应声碎裂，密密麻麻的裂纹疯狂蔓延开来，最后轰然炸裂。;
+
+:一道空间裂隙被强行撕开，露出了外面那片真实的宇宙。;
+changeFigure: -id=byl -next;
+changeFigure:贝利亚逃窜.png -id=byl -transform={"position":{"x":100,"y":300},"scale":{"x":1.2,"y":1.2}} -next;
+
+:而贝利亚头也不回地飞了进去，逃离了这片幻境，竟然能从背影上看见慌乱狼狈。;
+:你再也憋不住笑意，冲着贝利亚慌乱的背影笑了出来。;
+我:哈哈哈哈哈哈，所以……就算是贝利亚这种狠角色，也逃不过带孩子的痛苦啊。;
+:你摇了摇头，也跟随贝利亚飞身穿过那道空间裂隙。;
+changeFigure: -id=byl -next;
+intro:你回到了行星地表。神秘的白色虚影已经消失不见，只剩下三位同伴依然被困在各自的幻境之中。 -fontSize=medium -backgroundColor=rgba(0, 0, 0, 1) -fontColor=rgba(255, 255, 255, 1) -animation=fadeIn -delayTime=2000;
+intro:恭喜你通关贝利亚隐藏线，下面请继续选择您的主线。 -fontSize=medium -backgroundColor=rgba(0, 0, 0, 1) -fontColor=rgba(255, 255, 255, 1) -animation=fadeIn -delayTime=1500;
+changeBg: -next;
+changeScene:2.txt;

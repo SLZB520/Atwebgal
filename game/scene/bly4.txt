@@ -1,0 +1,53 @@
+changeBg:jimeng-2026-05-16-6464-白天明亮光线，整体光照更亮，墙上的儿童画替换为可爱卡通奥特曼形象，保留原场景的发_magic.png -next;
+:这一次，你发现自己站在一间普通的房间里。;
+:这是光之国一间再寻常不过的居民住宅。墙壁上挂着几幅歪歪扭扭的儿童画，角落里堆着几个发光积木，空气中有一种淡淡的、像是奶香味的气息。;
+我:（环顾四周）这该不会是贝利亚的家吧？;
+playEffect:开门.mp3 -id=门被推开;
+
+:就在这时，房门被猛地推开了。;
+playEffect:none -id=门被推开;
+changeFigure:atm_magic.png -left -id=zf -transform={"position":{"x":-135,"y":344},"scale":{"x":0.9,"y":0.9}} -next;
+:一个光之幼崽跌跌撞撞地冲了进来。他还没有你的膝盖高，银色的身躯圆滚滚的，两条小腿跑起来啪嗒啪嗒地响。;
+changeFigure:jk_magic.png -id=atm -transform={"position":{"x":-588,"y":370},"scale":{"x":1,"y":1}} -next;
+:紧接着，第二个幼崽也冲了进来——和第一个长得一模一样。;
+changeFigure:zf_magic.png -id=jk -transform={"position":{"x":-224,"y":317},"scale":{"x":0.9,"y":0.9}} -next;
+:然后是第三个。;
+:同样的小短腿，同样的小圆脸，不太一样的光之花纹。;
+:三个一模一样的幼崽挤在房间中央，你看看我，我看看你，然后又同时转头看着你。;
+我:（看看幼崽A，又看看幼崽B，再看看幼崽C，陷入了深深的沉思）……居然有三个一模一样的光之幼崽？这该不会是……;
+
+:你的猜测还没说完，一个高大的身影就出现在了房门口。;
+changeFigure:jimeng-2026-05-06-2213-保持脸部和表情不变，修改动作使其表现得手忙脚乱、烦躁，保证上半身完整，整体画面协_magic.png -right -id=byl -transform={"position":{"x":-138,"y":95},"scale":{"x":1.388,"y":1.5}} -next;
+我:贝利亚......?!贝利亚？？？？？？？;
+:他穿着一件与他整个奥的气质毫不相容的粉色围裙，一只手拿着喂饭勺，另一只手端着一碗冒着热气的光能辅食。;
+:更离谱的是他的背上——用背带牢牢地绑着另一个光之幼崽，那个幼崽扒着他的后脑勺，小脸贴在他的脸旁边，看上去长得有点像泰罗前辈。;
+playEffect:婴儿叫声.mp3 -id=婴儿哭声;
+？？？:哇哇哇哇——————;
+playEffect: -id=婴儿哭声;
+:突然，门后面传来了哇哇的哭声。声此起彼伏，一个比一个响亮，像是某种魔音贯耳的合奏。;
+:贝利亚大步走进房间，明明什么表情都应该看不见的脸上此时眉头像是拧成了一个"川"字。;
+:他弯下腰，一把抓住房间里三个一模一样幼崽中的其中一个，舀起一勺辅食就往幼崽嘴边送。;
+playEffect:婴儿叫声.mp3 -id=抗拒吃饭;
+
+:然而勺子还没碰到嘴，那个幼崽就哇的一声哭了出来，小脑袋拼命往旁边躲，手脚并用地抗拒着那勺饭。;
+playEffect:none -id=抗拒吃饭;
+changeFigure:ChatGPT Image 2026年5月15日 22_36_00_magic.png -id=baby -transform={"position":{"x":149,"y":383},"scale":{"x":1.05,"y":1.05},"bloom":0.184,"bloomBrightness":0.749,"bloomThreshold":0.109} -next;
+miniAvatar:泰罗（1）.png;
+小泰罗:（扒着贝利亚的脸，用奶声奶气但极其认真的语气提醒道）这是佐菲哥哥，他今天已经吃了三碗了。;
+miniAvatar:none;
+changeFigure:none -id=baby;
+:贝利亚的手在空中僵住了。喂饭勺悬停在那，勺子里的光能辅食微微晃动着。;
+
+:你好像听见了什么东西碎裂的声音，或许是贝利亚残存的理智吧。;
+playEffect:玻璃.mp3 -volume=80 -id=碗碎裂;
+:他突然猛地站起来，把碗往地上一摔，碗碎成好几片，光能溅了一地。;
+playEffect: -id=碗碎裂;
+miniAvatar:贝利亚（1）.png;
+贝利亚:不是——肯和玛丽是有病吧？！没事捡这么多一模一样的小屁孩干什么！！;
+miniAvatar:none;
+changeFigure:none -id=zf -next;
+changeFigure:none -id=jk -next;
+changeFigure:none -id=atm -next;
+changeFigure: -id=byl -next;
+changeBg:none -next;
+changeScene:bly5.txt;

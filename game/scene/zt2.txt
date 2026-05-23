@@ -1,0 +1,84 @@
+changeBg:光之国考场.png -next;
+changeFigure:泽塔.png -id=zt -transform={"position":{"x":0,"y":406},"scale":{"x":1.494,"y":1.397}} -next;
+？？？:"分值 +10，恭喜，请进入下一题。";
+
+label:question_3
+intro:第三题：请问以下四奥谁的年龄最大？|A、奥特曼   B、希卡利  C、泰罗  D、赛文 -fontSize=large -backgroundColor=rgba(0, 0, 0, 1) -fontColor=rgba(255, 255, 200, 1) -animation=fadeIn -delayTime=1500;
+choose:奥特曼:wrong_m1|希卡利:correct3|泰罗:wrong_t1|赛文:wrong_s1
+
+label:wrong_m1
+我:奥特曼前辈给我的感觉一直都很稳重啊，既是光之国的大学教授又是很能打的光之战士！很有前辈的气息，会不会是奥特曼前辈年龄比较大呢？;
+miniAvatar:泽塔(1).png;
+泽塔:我记得奥特曼哥哥好像是两万岁吧，确实是奥特六兄弟里除了佐菲队长最大的一个，不过直觉告诉我应该不对吧。;
+miniAvatar:none;
+jumpLabel:question_3
+
+label:wrong_t1
+我:泰罗前辈给我的感觉一直都很稳重啊，还是宇宙警备队的首席教官！有丰富的战斗经验，会不会是泰罗前辈年龄比较大呢？;
+miniAvatar:泽塔(1).png;
+泽塔:不是吧，我记得泰罗前辈好像是一万两千岁吧，连赛文前辈都比他大呢。;
+miniAvatar:none;
+我:哎？原来是这样吗？;
+jumpLabel:question_3
+
+label:wrong_s1
+我:赛文前辈给我的感觉一直都很稳重啊，既是光之国的恒星观测员又是很能打的光之战士！会不会是赛文前辈年龄比较大呢？;
+miniAvatar:泽塔(1).png;
+泽塔:我记得赛文哥哥好像是一万七千岁，不是最大的哦。;
+miniAvatar:none;
+jumpLabel:question_3
+
+label:correct3
+我:我知道了！一定是希卡利长官吧！果然希卡利长官最成熟，最温柔，最可靠了。;
+miniAvatar:泽塔(1).png;
+泽塔:哎！那我呢那我呢！！！（奥特伤心）;
+miniAvatar:none;
+我:泽塔前辈当然是最棒的啦！;
+miniAvatar:泽塔(1).png;
+泽塔:真的吗？（奥特开心）;
+miniAvatar:none;
+playEffect:correct_answer3 (1).mp3 -volume=40 -id=正确音效;
+？？？:"分值 +10，恭喜，请进入下一题。";
+playEffect:none -id=正确音效;
+intro:随着你和泽塔不断地解开试卷上的题目，分数也在不断的增加，直到最后一题写完，原本暗淡的卷面散发出耀眼的光芒。 -fontSize=medium -backgroundColor=rgba(0, 0, 0, 1) -fontColor=rgba(255, 255, 255, 1) -animation=fadeIn -delayTime=1500;
+changeFigure:泽塔.png -id=zt -transform={"position":{"x":0,"y":406},"scale":{"x":1.494,"y":1.397}} -next;
+
+？？？:"分值 +10，恭喜你已完成全部题目，正在核算。。最。。后分数。。。。";
+
+miniAvatar:泽塔(1).png;
+泽塔:太好了！终于完成了！可以出去了！我们实在是太棒了！奥特兴奋啊！;
+miniAvatar:none;
+
+我:太好了，泽塔前辈！我们都答对了！岂不是满分！！超级厉害啊！;
+
+miniAvatar:泽塔(1).png;
+泽塔:我考了满分？！奥特感动！！我要把这个好消息告诉赛罗师父——;
+miniAvatar:none;
+
+playEffect:爆炸白光.mp3 -id=空间扭曲;
+bgm:泽塔考场战斗.mp3 -enter=600;
+:你们的欢呼声还没落下，考卷突然蒙上一层暗紫色的光。周围的空间流逐渐紊乱，目光所及之处的物体都开始闪烁，整个考场都剧烈震动起来。;
+playEffect:none -id=空间扭曲;
+playEffect:警报.mp3 -id=警报;
+？？？:"最......最后......分......数......为......滋滋......";
+playEffect:none -id=警报;
+？？？:"零分" -fontSize=large;
+
+miniAvatar:泽塔(1).png;
+泽塔:怎么回事？我明明拿到了足够的积分啊？;
+miniAvatar:none;
+
+我:泽塔前辈！;
+
+:你将泽塔一把拉开，远离桌上不断散发着紫黑色气体的试卷，一瞬间考卷开始扭曲、膨胀，表面浮现出赤红色的纹路。;
+
+playEffect:极速飞过完整版.mp3 -id=邪恶能量;
+？？？:"考生......泽塔——不合格（标红）。";
+playEffect:none -id=邪恶能量;
+playEffect:空间扭曲.mp3 -id=剧烈震动;
+？？？:"消灭不合格考生，立刻......立刻......执行。";
+playEffect:none -id=剧烈震动;
+changeBg:开场破败.png -enter=dotFilm -exit=enter -next;
+changeBg: -next;
+changeFigure: -next;
+changeScene:zt3.txt
