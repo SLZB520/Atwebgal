@@ -365,6 +365,13 @@
         });
         /** 点击屏幕，进入引擎主界面 */
         const enter = () => {
+          // 解锁浏览器音频自动播放限制
+          const audioCtx = window.AudioContext || window.webkitAudioContext;
+          if (audioCtx) {
+            const ac = new audioCtx();
+            if (ac.state === 'suspended') ac.resume();
+            ac.createBuffer(1, 1, 22050);
+          }
           const titleEnter = document.querySelector('.html-body__title-enter');
           if (enterConfig.skipAnimation) {
             if (titleEnter) {
