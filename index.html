@@ -191,6 +191,8 @@
         const deviceInfo = window.__WEBGAL_DEVICE_INFO__ ?? { isIOS: false };
         const isIOS = deviceInfo.isIOS;
         const isMobile = isIOS || /Android|Mobile|webOS|BlackBerry/i.test(navigator.userAgent);
+        const isWeChat = /MicroMessenger/i.test(navigator.userAgent);
+        // 所有移动端都不用旋转，避免夸克等浏览器布局偏移（文字跑偏到左边）
         const layoutConfig = isMobile
           ? {
               bottomInset: isIOS ? 15 : 0,
@@ -198,6 +200,7 @@
               viewport:
                 'width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover',
               hideEffectBackground: true,
+              noRotate: true,
             }
           : {
               bottomInset: 0,
@@ -267,8 +270,8 @@
                 `rotate(90deg) ` + ` translate(${mw2os}px, ${mh2os}px) ` + `scale(${zoomW2 * 1.75}, ${zoomW2 * 1.75}) `;
               transform = `rotate(90deg) ` + `translate(${mw2os}px, ${mh2os}px) ` + `scale(${zoomW2},${zoomW2}) `;
             }
-            // iOS 不强制旋转
-            if (isIOS) {
+            // 移动端不强制旋转，避免夸克/百度等浏览器布局偏移
+            if (layoutConfig.noRotate) {
               const zoomWi = w / targetWidth;
               if (effectBackground) {
                 effectBackground.style.height = `100vh`;
@@ -328,11 +331,12 @@
         };
       })();
     </script>
-    <!-- 注册 Service Worker -->
+    <!-- 注册 Service Worker（微信/移动端跳过，兼容性太差） -->
     <script>
       (() => {
-        const isIOS = window.__WEBGAL_DEVICE_INFO__?.isIOS ?? false;
-        if ('serviceWorker' in navigator && !isIOS) {
+        const isMobile = window.__WEBGAL_DEVICE_INFO__?.isIOS ?? false
+          || /Android|Mobile|MicroMessenger/i.test(navigator.userAgent);
+        if ('serviceWorker' in navigator && !isMobile) {
           navigator.serviceWorker
             .register('./webgal-serviceworker.js')
             .then((reg) => {
@@ -347,8 +351,10 @@
     <!-- 首屏加载 -->
     <script>
       (() => {
-        const isIOS = window.__WEBGAL_DEVICE_INFO__?.isIOS ?? false;
-        const enterConfig = isIOS
+        const ua = navigator.userAgent;
+        const isMobile = window.__WEBGAL_DEVICE_INFO__?.isIOS ?? false
+          || /Android|Mobile|MicroMessenger/i.test(ua);
+        const enterConfig = isMobile
           ? { skipAnimation: true, hideDelay: 0 }
           : { skipAnimation: false, hideDelay: 2000 };
         let enterPromiseResolve;
@@ -410,7 +416,7 @@
           setTimeout(() => {
             if (titleEnter) titleEnter.style.opacity = '0';
           }, 500); // 500ms后开始降低落地页透明度
-          if (!isIOS && titleEnter) {
+          if (!isMobile && titleEnter) {
             titleEnter.style.pointerEvents = 'none'; // 落地页不再响应点击
             titleEnter.style.background = 'linear-gradient( #a1c4fd 0%, #c2e9fb 100%)'; // 改变标题渐变效果
           }
